@@ -1,10 +1,12 @@
 
 import React, { useEffect } from "react";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ClassesSection from "@/components/ClassesSection";
 import InstructorsSection from "@/components/InstructorsSection";
 import LocationsSection from "@/components/LocationsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 
 const Index = () => {
@@ -19,6 +21,7 @@ const Index = () => {
       transition={{ duration: 0.5 }}
       className="page-transition"
     >
+      <Navbar />
       <Hero />
       
       {/* About Section */}
@@ -131,6 +134,7 @@ const Index = () => {
       
       <LocationsSection />
       <TestimonialsSection />
+      <Footer />
     </motion.div>
   );
 };
